@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Lustosa - Biografia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Biografia de Diego Lustosa</h1>
+    </header>
+    <main>
+        <section class="bio">
+            <img src="https://pbs.twimg.com/profile_images/1751270729595695104/lJDiDl62_400x400.jpg" alt="Diego Lustosa">
+            <h2>SOBRE</h2>
+            <p>Diego Carvalho Lustosa ou Diego Lustosa (Nascido na cidade de Gilbués do Piauí no Brasil em 26 de agosto de 2005) é um cristão evangélico, pequeno escritor, autor do livro "Frutos do Espírito: Transformando vidas com amor, alegria e paz", é também conhecido por ser um youtuber do canal de games e comédias de memes chamado "Diego #FocaNisso". Desde que era criança sua mãe (Veracy) e seu pai (Domingos) ensinavam os seus filhos (Diego, Dãmires e Dardah) a andarem sempre nos caminhos de Deus.</p>
+            
+            <h3>DETALHES</h3>
+                <li><strong>Nascimento:</strong> 26 de agosto de 2005 (idade <span id="idade"></span> anos), Piauí, Gilbués.</li>
+                <li><strong>Nome completo:</strong> Diego Carvalho Lustosa</li>
+                <li><strong>Ocupação:</strong> Estudante, youtuber.</li>
+                <li><strong>Pais:</strong> Veracy, Domingos</li>
+                <li><strong>Irmãs:</strong> Dãmires, Dardah</li>
+                <li><strong>Altura:</strong> 1,67m</li>
+                <li><strong>Religião:</strong> Cristão Evangélico</li>
+                <li><strong>Personalidade:</strong> I.S.T.J (Logístico)</li>
+                <br>
+            <h3 class="livro-titulo">LIVRO: Frutos do Espírito</h3>
+            <img src="https://m.media-amazon.com/images/I/41RmDrXVoeL._SY580_.jpg" alt="Frutos do Espírito" class="livro-imagem">
+            <a href="https://a.co/d/cnyZiti" class="btn">COMPRAR AGORA</a>
+
+           <p>O livro "Frutos do Espírito: Transformando Vidas com Amor, Alegria e Paz", de Lustosa, explora a fundo o conceito dos frutos do Espírito como virtudes essenciais para uma caminhada cristã autêntica. Lustosa apresenta essas qualidades amor, alegria, paz, paciência, amabilidade, bondade, fidelidade, mansidão e autodomínio não apenas como características desejáveis, mas como reflexos diretos do caráter divino.</p>
+
+             <p>O autor argumenta que, ao cultivar esses frutos, os indivíduos se tornam mais semelhantes a Cristo e ajudam a construir relacionamentos saudáveis e uma sociedade mais justa e compassiva. Viver segundo os frutos do Espírito demonstra compromisso com a vontade de Deus e obediência a Seus preceitos. Lustosa sugere que esses frutos são sinais da transformação operada pelo Espírito Santo, guiando-nos para uma vida de integridade e serviço ao próximo. O livro oferece um convite à reflexão e ao crescimento espiritual, apresentando um caminho para uma vida mais plena e harmoniosa.</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Diego Lustosa</p>
+        <div id="relogio"></div>
+    </footer>
+
+    <script>
+        function atualizarRelogio() {
+            const agora = new Date();
+            const horas = String(agora.getHours()).padStart(2, '0');
+            const minutos = String(agora.getMinutes()).padStart(2, '0');
+            const segundos = String(agora.getSeconds()).padStart(2, '0');
+            const horarioAtual = `${horas}:${minutos}:${segundos}`;
+            document.getElementById('relogio').textContent = horarioAtual;
+        }
+
+        setInterval(atualizarRelogio, 1000);
+        atualizarRelogio(); // Atualiza imediatamente ao carregar a página
+    </script>
+</body>
+</html>
